@@ -1,0 +1,39 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+@import "../abstracts/variables";
+
+// MEDIA QUERY MANAGER
+/*
+0 - 375px:      Phone
+768 -991px:   Tablet
+992 - 1440px+:   Desktop
+
+$breakpoint argument choices:
+- phone
+- tab
+- desktop
+
+- 1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 23.43em) { @content };  //375px
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 48em) { @content }; //768px
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 62em) { @content }; //960px
+  }
+}
+
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+

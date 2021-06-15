@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+$max-width: 1180px;
+
+$body-font-stack: 'Inter', sans-serif;;
+$header-font-stack: "Archivo", sans-serif;
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+        'xs': 320px,
+        'sm': 576px,
+        'mg': 768px,
+        'lg': 992px,
+        'xl': 1200px
+);

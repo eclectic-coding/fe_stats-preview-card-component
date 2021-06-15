@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%; // 10px as 1 rem == 16px = 1.6 rem
+  --color-main-background: hsl(233, 47%, 7%);
+  --color-card-background: hsl(244, 38%, 16%);
+  --color-accent: hsl(277, 64%, 61%);
+  --neutral-main-heading: hsl(0, 0%, 100%);
+  --neutral-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --neutral-stat-heading: hsla(0, 0%, 100%, 0.60);
+
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.attribution {
+  padding-bottom: 2rem;
+  font-size: 1.1rem;
+  text-align: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-accent);
+}
+
+
+

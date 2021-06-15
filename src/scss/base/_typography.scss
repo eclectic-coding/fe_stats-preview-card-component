@@ -1,0 +1,31 @@
+/**
+ * Basic typography style -- Semantic and elements styles
+ * Classes will be located in other partials
+ */
+@import "../abstracts/variables";
+
+body {
+  font-family: $body-font-stack;
+  background-color: var(--color-main-background);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+
+
+  }
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  text-decoration: none;
+
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+ul {
+  list-style: none;
+}
