@@ -14,7 +14,7 @@ module.exports = {
 
   // Styles
   stylesSrc: "src/scss/**/*.{scss,sass}",
-  stylesDest: "dist/",
+  stylesDest: "dist/css",
 
   // Images
   imagesSrc: "src/images/*.*",

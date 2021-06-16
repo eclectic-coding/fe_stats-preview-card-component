@@ -6,26 +6,12 @@
 
 body {
   font-family: $body-font-stack;
-  background-color: var(--color-main-background);
+  background-color: var(--neutral-transparent-white);
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.6;
-
-
-  }
 }
 
-/**
- * Basic styles for links
- */
 a {
   text-decoration: none;
-
-  &:hover {
-    font-weight: bold;
-  }
-}
-
-ul {
-  list-style: none;
 }

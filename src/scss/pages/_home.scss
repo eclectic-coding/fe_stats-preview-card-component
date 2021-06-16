@@ -1,4 +1,50 @@
 .container {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.card {
+  width: 88vw;
+  padding: 5rem;
+
+  &:first-child {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  &:last-child {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  &__sedan {
+    background-color: var(--color-bright-orange);
+  }
+
+  &__suvs {
+    background-color: var(--color-dark-cyan);
+  }
+
+  &__luxury {
+    background-color: var(--color-very-dark-cyan);
+  }
+
+  &__img {
+
+  }
+
+  &__title {
+    font-size: 4rem;
+    color: var(--neutral-elements);
+    font-family: 'Big Shoulders Display', cursive;
+  }
+
+  &__body {
+    color: var(--neutral-transparent-white);
+    font-family: 'LexandDeca', sans-serif;
+    line-height: 2.4rem;
+  }
+
+
 }
 

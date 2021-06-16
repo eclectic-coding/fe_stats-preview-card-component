@@ -1,0 +1,48 @@
+.btn {
+  background-color: var(--neutral-elements);
+  height: 5rem;
+  border-radius: 10rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: none;
+    border: 2px solid var(--neutral-transparent-white);
+  }
+
+  a {
+    padding: 0 3rem;
+    font-size: 1.5rem;
+  }
+
+  &__sedan a {
+    color: var(--color-bright-orange);
+    transition: all 0.25s ease-in;
+
+    &:hover {
+      color: var(--neutral-transparent-white);
+    }
+  }
+
+
+  &__suvs a {
+    color: var(--color-dark-cyan);
+    transition: all 0.25s ease-in;
+
+    &:hover {
+      color: var(--neutral-transparent-white);
+    }
+  }
+
+  &__luxury a {
+    color: var(--color-very-dark-cyan);
+  }
+
+  &:hover {
+    color: var(--neutral-transparent-white);
+  }
+
+}
