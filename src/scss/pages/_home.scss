@@ -3,11 +3,27 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem 0;
+
+  @include respond(desktop) {
+    flex-direction: row;
+    min-height: 100vh;
+    width: 66vw;
+  }
 }
 
 .card {
   width: 88vw;
   padding: 5rem;
+
+  @include respond(tablet) {
+    width: 80vw;
+    max-width: 60rem;
+    padding: 8%;
+  }
+
+  @include respond(desktop) {
+    padding: 5rem;
+  }
 
   &:first-child {
     border-radius: 0.5rem 0.5rem 0 0;

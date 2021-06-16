@@ -8,6 +8,10 @@
   margin-top: 2rem;
   transition: all 0.25s ease;
 
+  @include respond(tablet) {
+    margin-top: 5rem;
+  }
+
   &:hover {
     background: none;
     border: 2px solid var(--neutral-transparent-white);
